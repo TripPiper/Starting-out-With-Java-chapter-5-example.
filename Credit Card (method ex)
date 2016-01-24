@@ -1,0 +1,48 @@
+
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author Tutor
+ */
+public class CreditCardExample 
+{
+    public static void main(String[] args) 
+    {
+        double salary ; // Annual pay
+        int ccRating ; // C rating
+        String input ; // To hold users input
+        
+        // Get user'e annual salry
+        input =JOptionPane.showInputDialog("What is your annual salary?");
+        salary= Double.parseDouble(input);
+       // Get the user CC rating 1- 10
+        input =JOptionPane.showInputDialog(" On a scale of 1-10 ,What is your CC rating?");
+        ccRating= Integer.parseInt(input); 
+        
+        // Determine whether the user qualifies
+        if (salary >= 20000 && ccRating >= 7)
+            qualify();
+        else
+            noQualify();
+        System.exit(0);
+    }
+    
+    /**
+      The qualify method informs the user if she qualifies 
+     */
+    public static void qualify(){
+        JOptionPane.showMessageDialog(null, "Congrats! You Qualify.");
+    }
+    
+    /**
+      The noQualify method informs the user if she does not qualifies 
+     */
+    public static void noQualify()
+    {
+        JOptionPane.showMessageDialog(null, "You don't qualify.");
+    }
+    
+    
+    
+}
