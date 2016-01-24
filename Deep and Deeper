@@ -1,0 +1,26 @@
+public class DeepAndDeeperExample 
+{
+    public static void main(String[] args) 
+    {
+        
+         System.out.println("Start in main.");
+            deep();
+         System.out.println("Back in the main . ");
+    }     
+         /** deep method displays a message and then calls the deeper method */
+         
+          public static void deep() 
+          {
+           System.out.println("I am now in deep. ");
+           deeper();
+           System.out.println("Now I am back in deep. ");
+          }
+          
+          /** The Deeper message just display a message */
+          public static void deeper() 
+          {
+               System.out.println("Now I am back in deeper. ");
+          }
+          
+    
+}
